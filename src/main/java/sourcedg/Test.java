@@ -14,7 +14,7 @@ import sourcedg.util.GraphExporter;
 public class Test {
 
 	public static void main(final String[] args) throws Exception {
-		final FileInputStream in = new FileInputStream("/Users/goal/git/jplag-filtering/fJOHNY/12481738.java");
+		final FileInputStream in = new FileInputStream("C:/Users/navdh/Desktop/project/pdg/Bubble_sort.java");
 		PDGBuilderConfig config = PDGBuilderConfig.create();
 		final PDGBuilder builder = new PDGBuilder(config, Level.WARNING);
 		builder.build(in);
@@ -25,7 +25,7 @@ public class Test {
 		final Iterator<CFG> it = builder.getCfgs().iterator();
 		final CFG cfg = it.next();
 		// System.out.println(cfg.cyclomaticComplexity());
-		GraphExporter.exportAsDot(pdg, "/Users/goal/Desktop", "pdg");
+		GraphExporter.exportAsDot(pdg, "C:/Users/navdh/Desktop/project/pdg", "Bubble");
 	}
 
 }

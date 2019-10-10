@@ -14,7 +14,7 @@ import sourcedg.util.GraphExporter;
 public class Slicing {
 
   public static void main(final String[] args) throws Exception {
-    final FileInputStream in = new FileInputStream("programs/java8/normalization/8810011.java");
+    final FileInputStream in = new FileInputStream("C:/Users/navdh/Desktop/project/pdg/Bubble_sort.java");
     PDGBuilderConfig config = PDGBuilderConfig.create().normalize();
     final PDGBuilder builder = new PDGBuilder(config);
     builder.build(in);
@@ -34,7 +34,7 @@ public class Slicing {
     for (final Vertex w : slice) {
       w.setFillColor("yellow");
     }
-    GraphExporter.exportAsDot(pdg, "/Users/goal/Desktop", "graph");
+    GraphExporter.exportAsDot(pdg, "C:/Users/navdh/Desktop/project/pdg", "graph");
     System.out.println(slice);
 
 
